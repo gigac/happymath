@@ -1,0 +1,34 @@
+{
+  "name": "gigac/happymath",
+  "type": "library",
+  "description": "Do math operation in spreadsheets formula style",
+  "keywords": ["happy", "math"],
+  "homepage": "https://github.com/gigac/happymath",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Argir Popov",
+      "email": "argirco.popov@gmail.com",
+      "homepage": "http://gigac.mk"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gigac\\HappyMath\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gigac\\Tests\\HappyMath\\": "./tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
