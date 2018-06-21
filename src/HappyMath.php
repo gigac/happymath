@@ -36,6 +36,14 @@ class HappyMath
         return $expression;
     }
 
+    /**
+     * Execute operation
+     *
+     * @param  string $operation
+     * @param  string $values
+     *
+     * @return float|int|mixed
+     */
     private static function doOperation($operation, $values)
     {
         $values = explode(',', $values);
@@ -79,7 +87,13 @@ class HappyMath
         }
     }
 
-
+    /**
+     * Multiply values with each other
+     *
+     * @param  array $values
+     *
+     * @return float|int
+     */
     private static function multiply($values)
     {
         $result = 1;
@@ -91,6 +105,13 @@ class HappyMath
         return $result;
     }
 
+    /**
+     * Subtract array values from each other
+     *
+     * @param  array $values
+     *
+     * @return int
+     */
     private static function subtract($values)
     {
         $result = 0;

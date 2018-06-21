@@ -2,9 +2,6 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Calculate expressions formula style like spreadsheets
@@ -25,6 +22,16 @@ $result = new Gigac\HappyMath\HappyMath($expression);
 ```
 
 ## Testing
+
+``` bash
+$ ./vendot/bin/phpunit
+```
+
+## ToDo
+* Refactor structure
+* Finish tests
+* Check valid expression
+* ...
 
 ``` bash
 $ ./vendot/bin/phpunit
