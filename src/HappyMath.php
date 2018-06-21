@@ -14,6 +14,8 @@ class HappyMath
      */
     public static function calculate($expression)
     {
+        self::validateExpression($expression);
+
         do
         {
             preg_match_all("/\(([0-9,\.]*?)\)/", $expression, $matches, PREG_OFFSET_CAPTURE);
@@ -37,6 +39,22 @@ class HappyMath
     }
 
     /**
+     * Validate expression
+     *
+     * @param  string $expression
+     */
+    private static function validateExpression($expression)
+    {
+        $openBrackets = substr_count($expression, '(');
+        $closeBrackets = substr_count($expression, ')');
+
+        if ($openBrackets != $closeBrackets)
+        {
+            throw new \InvalidArgumentException('Invalid expression');
+        }
+    }
+
+    /**
      * Execute operation
      *
      * @param  string $operation
@@ -54,7 +72,7 @@ class HappyMath
                 return array_sum($values);
                 break;
 
-            case 'DIFF':
+            case 'DIF':
                 return self::subtract($values);
                 break;
 
@@ -79,6 +97,10 @@ class HappyMath
 
             case 'MIN':
                 return min($values);
+                break;
+
+            case 'CNT':
+                return count($values);
                 break;
 
             default:
