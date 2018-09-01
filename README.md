@@ -24,7 +24,7 @@ $result = new Gigac\HappyMath\HappyMath($expression);
 ## Testing
 
 ``` bash
-$ ./vendot/bin/phpunit
+$ ./vendor/bin/phpunit
 ```
 
 ## ToDo
@@ -33,10 +33,6 @@ $ ./vendot/bin/phpunit
 * Finish tests
 * Check valid expression
 * ...
-
-``` bash
-$ ./vendor/bin/phpunit
-```
 
 ## Credits
 
