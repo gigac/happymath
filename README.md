@@ -28,13 +28,14 @@ $ ./vendot/bin/phpunit
 ```
 
 ## ToDo
+* Fix subtraction
 * Refactor structure
 * Finish tests
 * Check valid expression
 * ...
 
 ``` bash
-$ ./vendot/bin/phpunit
+$ ./vendor/bin/phpunit
 ```
 
 ## Credits
