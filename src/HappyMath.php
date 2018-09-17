@@ -81,7 +81,14 @@ class HappyMath
                 break;
 
             case 'DIV':
-                return $values[0] / $values[1];
+                try
+                {
+                    return $values[0] / $values[1];
+                }
+                catch (\Exception $e)
+                {
+                    return 0;
+                }
                 break;
 
             case 'AVG':

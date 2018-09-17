@@ -47,4 +47,16 @@ class HappyMathExpressionsTest extends TestCase
 
         $this->evaluateExpressionArray($expressions);
     }
+
+    /**
+     * @test
+     */
+    public function evaluateDivisionWithZero()
+    {
+        $expressions = [
+            'DIV(2,0)' => 0
+        ];
+
+        $this->evaluateExpressionArray($expressions);
+    }
 }
